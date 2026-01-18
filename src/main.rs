@@ -87,7 +87,7 @@ fn draw(frame: &mut Frame) {
 
     let big_text = BigText::builder()
         .pixel_size(PixelSize::Full)
-        .lines(&[Line::from(now.format("%H:%M %p").to_string())])
+        .lines(&[Line::from(now.format("%I:%M %p").to_string())])
         .centered()
         .build();
     let mut area = frame.area();
